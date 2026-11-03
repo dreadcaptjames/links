@@ -14,6 +14,28 @@ To make it public, upload **the contents of this entire folder** (including the 
 
 `index.html` is the home page. `assets/styles.css` controls design and responsive behavior. `assets/site.js` provides the mobile menu, link filters, search, and sharing. Images are kept in `assets/`.
 
+## Browser icons and iPhone/iPad Home Screen installation
+
+The site now includes your real gold skull-shield logo as a browser tab favicon and a dedicated **navy-backed iOS Home Screen icon**. A web app manifest also supports Android/desktop install prompts where supported.
+
+### To add the website to an iPhone Home Screen
+
+1. **Publish the full website folder on an HTTPS host** (the local HTML preview cannot be installed as a real web app).
+2. On iPhone, open the published URL in **Safari**.
+3. Use the **Share** menu, then tap **Add to Home Screen**.
+4. Leave **Open as Web App** enabled, then tap **Add**.
+
+The app-like Home Screen shortcut is labeled **Dread Captain**, displays your logo, and opens the website without the usual Safari toolbar. It is still a website: it needs an internet connection and is not an App Store app. If replacing an older saved shortcut, remove it and add it again to refresh cached icons.
+
+### Icon and metadata files
+
+- `favicon.ico` and `assets/favicon-16.png` / `assets/favicon-32.png` — browser tabs and legacy favicon support
+- `apple-touch-icon.png` (180×180) — iPhone/iPad Home Screen icon
+- `site.webmanifest` — web app identity, name, launch behavior, and install icons
+- `assets/icon-192.png`, `assets/icon-512.png`, `assets/icon-maskable-512.png` — other devices and Android/adaptive icons
+
+**Deploy all files, not just `index.html`.** Paths are relative so the site also works from a subfolder on GitHub Pages.
+
 ## About the content
 
 The site uses the original logo provided by the creator, converted into a transparent web image. Scenic thumbnail art was taken from the previously approved concept mockup and used as **illustrative category images**, not as claims about specific releases. The site does **not** claim a stream is currently live or invent video/music titles, dates, or view counts.
@@ -34,11 +56,20 @@ The following external destinations are included: Twitch, YouTube, stream archiv
 
 ```text
 index.html
+site.webmanifest
+apple-touch-icon.png
+favicon.ico
 assets/
   styles.css
   site.js
   dread-emblem.webp
   favicon.png
+  favicon-16.png
+  favicon-32.png
+  favicon-48.png
+  icon-192.png
+  icon-512.png
+  icon-maskable-512.png
   social-preview.jpg
   crimson-nebula.webp
   stream-banner.webp
