@@ -244,3 +244,47 @@ button, a{-webkit-tap-highlight-color:transparent}
   .header-brand span{font-size:11px;max-width:145px}.hero h1{font-size:30px}.hero-overline{letter-spacing:.07em}.hero-description{font-size:12px}.platform-card{gap:4px}.platform-copy small{font-size:8px}.card-arrow{display:none}.section-title{font-size:12px}.directory-link{gap:4px}.directory-link>.small-symbol{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+
+/* SE Selective Service — prominent Helldivers 2 live draft queue */
+.hero-draft-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin:15px auto 0;padding:8px 13px;border:1px solid rgba(246,181,71,.55);border-radius:7px;background:rgba(8,25,39,.79);color:#f8d79b;box-shadow:0 0 22px rgba(213,107,28,.07);font-size:12px;line-height:1.35;transition:background .2s,border-color .2s,transform .2s}
+.hero-draft-link:hover,.hero-draft-link:focus-visible{border-color:var(--gold-bright);background:#142c3d;transform:translateY(-2px)}
+.hero-draft-label{color:#ec9c70;font-size:10px;font-weight:800;letter-spacing:.095em}
+.hero-draft-link strong{color:#ffdf9b;letter-spacing:.035em}
+.hero-draft-arrow{font-size:18px;color:var(--gold-bright);line-height:1}
+.draft-service{padding-top:16px}
+.draft-service-panel{position:relative;display:flex;align-items:center;gap:21px;padding:19px 23px;overflow:hidden;border:1px solid var(--gold);border-radius:9px;background:radial-gradient(ellipse at 2% 50%,rgba(155,29,39,.22),transparent 42%),linear-gradient(110deg,#111c2a,#081723 76%);box-shadow:inset 0 0 0 1px rgba(229,175,81,.07),0 12px 32px rgba(0,0,0,.16)}
+.draft-service-panel:after{content:'';position:absolute;right:-12px;top:-55px;width:130px;height:130px;transform:rotate(35deg);background:repeating-linear-gradient(90deg,transparent 0 12px,rgba(186,34,46,.17) 12px 22px);pointer-events:none}
+.draft-service-mark{position:relative;z-index:1;display:grid;place-items:center;width:66px;height:66px;flex:none;border:1px solid rgba(251,195,93,.65);border-radius:13px;background:linear-gradient(135deg,rgba(150,31,45,.35),rgba(9,24,34,.5));color:#ffd17a;box-shadow:0 0 20px rgba(220,66,48,.14)}
+.draft-service-mark .line-icon{width:37px;height:37px;stroke-width:1.5}
+.draft-service-copy{position:relative;z-index:1;min-width:0;flex:1}
+.draft-service-copy .eyebrow{font-size:10px;letter-spacing:.18em;color:#f5b264}
+.draft-service-copy h2{margin:4px 0;font-size:clamp(19px,2.1vw,27px);line-height:1.18;letter-spacing:.095em;color:#ffdea0}
+.draft-service-copy p{margin:7px 0 0;max-width:630px;color:#d3d6d8;font-size:12px;line-height:1.55}
+.action-draft{position:relative;z-index:1;flex:none;border-color:#f1ba5a;color:#081622;background:linear-gradient(180deg,#ffe2a3,#e3a94a);box-shadow:0 3px 18px rgba(230,164,63,.17)}
+.action-draft:hover,.action-draft:focus-visible{color:#051321;background:linear-gradient(180deg,#fff0bd,#edba65);box-shadow:0 5px 24px rgba(229,160,56,.24)}
+.action-draft .line-icon{width:17px;height:17px}
+
+@media(max-width:760px){
+  .draft-service-panel{gap:14px;padding:17px}
+  .draft-service-mark{width:51px;height:51px;border-radius:10px}
+  .draft-service-mark .line-icon{width:30px;height:30px}
+  .draft-service-copy h2{font-size:21px}
+  .action-draft{margin-left:auto}
+}
+@media(max-width:630px){
+  .draft-service-panel{display:grid;grid-template-columns:50px minmax(0,1fr);gap:12px 13px}
+  .draft-service-mark{grid-column:1;grid-row:1}
+  .draft-service-copy{grid-column:2;grid-row:1}
+  .draft-service-copy .eyebrow{font-size:9px;letter-spacing:.11em}
+  .draft-service-copy h2{font-size:20px}
+  .draft-service-copy p{font-size:12px}
+  .action-draft{grid-column:1/-1;width:100%;margin:3px 0 0;white-space:normal;text-align:center}
+}
+@media(max-width:500px){
+  .hero-draft-link{display:flex;gap:3px 7px;margin-top:13px;padding:9px 10px;font-size:11px}
+  .hero-draft-label{flex-basis:100%;font-size:9px}
+  .draft-service{padding-top:13px}
+  .draft-service-panel{padding:15px}
+  .draft-service-copy h2{font-size:18px}
+}
