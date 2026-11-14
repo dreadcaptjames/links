@@ -24,7 +24,7 @@ button, a{-webkit-tap-highlight-color:transparent}
 /* Header */
 .site-header{height:72px;position:sticky;top:0;z-index:80;border-bottom:1px solid var(--gold-dim);background:rgba(4,15,25,.94);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 5px 22px rgba(0,0,0,.18)}
 .header-layout{height:100%;display:flex;gap:23px;align-items:center}
-.header-brand{display:flex;gap:14px;align-items:center;flex-shrink:0;min-width:306px;color:var(--gold-bright);font:700 18px/1 Georgia,'Times New Roman',serif;letter-spacing:.035em;text-shadow:0 1px 1px #000,0 0 13px rgba(229,159,62,.12);white-space:nowrap}
+.header-brand{display:flex;gap:14px;align-items:center;flex-shrink:0;min-width:306px;color:var(--gold-bright);font:700 18px/1 'Chakra Petch',Arial,sans-serif;letter-spacing:.035em;text-shadow:0 1px 1px #000,0 0 13px rgba(229,159,62,.12);white-space:nowrap}
 .header-brand:hover{color:#fff0b8}
 .header-emblem{display:block;width:45px;height:54px;object-fit:contain;filter:drop-shadow(0 0 6px rgba(240,175,71,.17))}
 .header-separator{height:32px;width:1px;background:var(--gold-dim);flex:none}
@@ -51,7 +51,7 @@ button, a{-webkit-tap-highlight-color:transparent}
 .hero-crest img{width:min(88%,274px);max-height:292px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(251,182,70,.4)) drop-shadow(0 0 23px rgba(208,86,27,.13));position:relative}
 .hero-copy{text-align:center;padding:20px 0 24px;position:relative;z-index:1}
 .hero-pretitle{margin:0 0 1px;color:#d1a758;letter-spacing:.39em;font-size:10px;font-weight:800}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:800;text-transform:uppercase;letter-spacing:.016em;line-height:.99;margin:0;font-size:clamp(46px,4.75vw,67px);text-shadow:1px 3px 0 rgba(39,19,4,.78),0 10px 30px rgba(0,0,0,.5)}
+.hero h1{font-family:'Chakra Petch',Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.016em;line-height:.99;margin:0;font-size:clamp(46px,4.75vw,67px);text-shadow:1px 3px 0 rgba(39,19,4,.78),0 10px 30px rgba(0,0,0,.5)}
 .hero h1>span{display:block;background:linear-gradient(180deg,#fff1b5 0%,#ffd278 24%,#da9e3e 57%,#f7c672 76%,#9c5a19 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero h1 .last-name{display:flex;align-items:center;justify-content:center;gap:24px;font-size:1.16em;line-height:1.04;white-space:nowrap}
 .last-name i{width:65px;max-width:11%;height:13px;display:block;background:linear-gradient(180deg,#9e172f 0 32%,transparent 32% 48%,#c52b3c 48% 78%,transparent 78%);clip-path:polygon(0 0,100% 0,90% 100%,0 100%)}
